@@ -1,4 +1,5 @@
 int led[]= {13,12,11,10,9};
+int d = 500;
 void setup()
 {
   for(int i=0; i<5; i++)
@@ -13,7 +14,7 @@ void loop()
   for(int i=0; i<5; i++)
     {
       digitalWrite(led[i], HIGH);
-        delay(500);
+        delay(d);
       digitalWrite(led[i], LOW);
         
    
@@ -23,7 +24,7 @@ void loop()
   for(int j=4; j>=0; j--)
     {
       digitalWrite(led[j], HIGH);
-        delay(500);
+        delay(d);
       digitalWrite(led[j], LOW);
     }
 
